@@ -49,8 +49,10 @@ final class Wpd_Query_Robiul {
      */
     public function require_classes() {
         require_once __DIR__ . '/includes/admin_menu.php';
+        require_once __DIR__ . '/includes/post-column.php';
 
         new Admin_menu();
+        new Wpd_Post_Column();
     }
 }
 
